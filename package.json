@@ -1,6 +1,6 @@
 {
   "name": "react-jam-button",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Login with jam react component",
   "main": "lib/index.js",
   "scripts": {
