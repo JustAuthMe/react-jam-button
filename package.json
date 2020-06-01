@@ -1,10 +1,12 @@
 {
   "name": "react-jam-button",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Login with jam react component",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc -p ."
+    "build": "tsc",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -31,8 +33,7 @@
     "@types/react-dom": "^16.9.8",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "typescript": "^3.9.3",
-    "url-loader": "^4.1.0",
-    "webpack": "^4.43.0"
-  }
+    "typescript": "^3.9.3"
+  },
+  "dependencies": {}
 }
