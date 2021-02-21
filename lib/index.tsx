@@ -30,7 +30,7 @@ const t = (lang: keyof typeof strings, param: JSX.Element) => {
  */
 
 export const JamLoginButton = ({size, lang, shape, appId, callback}: JamLoginButtonProps) => {
-    if (appId === null || callback === null) {
+    if (!appId || !callback) {
         return <pre>JustAuthMe button error: missing app ID or callback URL</pre>;
     }
 
