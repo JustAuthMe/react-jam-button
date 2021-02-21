@@ -3,16 +3,25 @@ Login with jam react component
 
 `npm i react-jam-button`
 
-``` js
+``` ts
 import {JamLoginButton} from "react-jam-button";
 
-...
+//...
 
-<JamLoginButton appId={"<app_id_here>"} redirectUrl={"<redirect_url_here>"} />
+<JamLoginButton
+    size="regular"
+    shape="squared"
+    lang="en"
+    appId="YOUR APP ID"
+    callback="YOUR CALLBACK URL" />
 ```
 
-Optional props :
+## Props :
  
-| props | description | value | default |
-|---|---| -----|---|
-| `locale`      | Change the button language | string, currently supported: en/fr | fr |
+| props |required| description | value | default |
+|---|---|---| -----|---|
+| `appId` | :heavy_check_mark: | Your application ID | string | **(required)** |
+| `callback` | :heavy_check_mark: | Your callback url | string | **(required)** |
+| `lang`      | :x: | Change the button language | string : `en`/`fr` | navigator setting or `en` |
+| `shape`      | :x: | Change the button shape | string : `squared`/`rounded` | `squared` |
+| `size`      | :x: | Change the button size | string : `small`/`regular`/`large` | `large` |
