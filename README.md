@@ -3,7 +3,12 @@ Login with jam react component
 
 `npm i react-jam-button`
 
-``` ts
+Add the styleshet to your index.html file: 
+```html
+    <link rel="stylesheet" href="https://static.justauth.me/medias/jam-button-v2.css">
+```
+
+``` js
 import {JamLoginButton} from "react-jam-button";
 
 //...
